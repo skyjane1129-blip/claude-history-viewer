@@ -1,21 +1,16 @@
 {
   "name": "claude-history-viewer",
-  "version": "1.0.0",
-  "description": "终端里浏览 Claude Code 历史对话的 TUI 工具",
+  "version": "2.0.0",
+  "description": "本地网页版 Claude Code 历史对话浏览器",
   "private": true,
   "type": "module",
-  "bin": {
-    "claude-history": "bin/cli.js"
-  },
   "scripts": {
-    "start": "node bin/cli.js"
+    "start": "node server.js"
   },
   "engines": {
     "node": ">=22"
   },
   "dependencies": {
-    "ink": "^7.1.0",
-    "ink-text-input": "^6.0.0",
-    "react": "^19.2.0"
+    "express": "^4.21.0"
   }
 }

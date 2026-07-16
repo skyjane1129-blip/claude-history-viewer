@@ -13,21 +13,18 @@
         <span class="brand">Claude 历史</span>
         <span class="live-dot" id="live-dot" title="实时连接状态"></span>
       </div>
+
+      <nav class="nav-tabs" id="nav-tabs">
+        <button class="nav-tab active" data-view="history">对话</button>
+        <button class="nav-tab" data-view="usage">用量</button>
+        <button class="nav-tab" data-view="skills">Skills</button>
+        <button class="nav-tab" data-view="rules">Rules</button>
+      </nav>
+
       <div class="project-list" id="project-list"></div>
     </aside>
 
-    <section class="conv-panel">
-      <div class="conv-panel-header">
-        <input id="search-input" class="search-input" type="text" placeholder="搜索标题或项目名..." />
-      </div>
-      <div class="conv-list" id="conv-list"></div>
-    </section>
-
-    <main class="detail-panel" id="detail-panel">
-      <div class="empty-state" id="empty-state">
-        <p>从左侧选择一个对话</p>
-      </div>
-    </main>
+    <div class="main-area" id="main-area"></div>
   </div>
 
   <div class="modal-overlay" id="modal-overlay" hidden>
